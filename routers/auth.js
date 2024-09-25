@@ -15,7 +15,7 @@ const generateToken = user => {
 		jwt.sign(
 			{ id: user._id, email: user.email },
 			secretKey,
-			{ expiresIn: "7d" },
+			{ expiresIn: "700d" },
 			(err, token) => {
 				if (err) {
 					return reject(err);
